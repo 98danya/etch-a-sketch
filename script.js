@@ -18,13 +18,13 @@ function createGrid(size) {
 createGrid(16);
 
     btn.addEventListener("click", function changeSize(size) {
-        size = prompt("Change the grid by entering a value between 0 and 100.");
+        size = prompt("Change the grid by entering a value between 1 and 100.");
         container.innerHTML = "";
         if ( 0 < size && size <=100) {
             createGrid(size);
         } else {
             createGrid(16);
-            alert("Try again! Only a value between 0 and 100!")
+            alert("Try again! Only a value between 1 and 100!")
         }
     });
 
